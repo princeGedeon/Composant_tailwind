@@ -1,0 +1,15 @@
+{
+  "name": "tailwindcss_learn",
+  "version": "1.0.0",
+  "description": "Decouverte",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "princeGedeon",
+  "license": "ISC",
+  "devDependencies": {
+    "@tailwindcss/forms": "^0.5.2",
+    "tailwindcss": "^3.1.7"
+  }
+}
