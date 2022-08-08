@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Grid</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-800 text-white">
+    
+  <a class="absolute left-4 top-3	 flex items-center  px-4 py-2 font-semibold  bg-gradient-to-r from-slate-300 to-zinc-300 text-gray-800  rounded-sm shadow-sm " href="../../menu.html">
+    <span class="text-md">&#8678;</span>
+  </a>
+
+  
+
+  <h1 class="font-medium text-6xl text-center pt-20 pb-10">Grid</h1>
+
+  <nav class="flex flex-wrap justify-center w-100 ">
+    <a class="flex-shrink-0  rounded-lg py-2 w-60 bg-gradient-to-r from-sky-200 to-blue-300 m-6 text-lg flex justify-center items-center cursor-pointer text-gray-800 font-bold" href="./1. Flexbox.html">Flexbox</a>
+    <a class="flex-shrink-0  rounded-lg py-2 w-60 bg-gradient-to-r from-sky-200 to-blue-300 m-6 text-lg flex justify-center items-center cursor-pointer text-gray-800 font-bold"  href="./2. Grid.html">Grid</a>
+  </nav>
+
+    <hr>
+     <!-- Contenu de la leçon -->
+
+     <div class="container mx-auto pb-60 px-4">
+      <h2 class="text-4xl text-gray-50 pt-10 pb-5">Propriétés Container</h2>
+      <!-- Initialisation : [grid|inline-grid] -->
+
+      <!-- Grid Template Columns : [grid-cols-(1|2|3|4|5|6|etc...|grid-cols-none] -->
+      <!-- grid-cols-1 donne : grid-template-columns: repeat(1, minmax(0, 1fr)); -->
+
+      <!-- Grid Template Rows : [grid-rows-(1|2|3|4|5|6|etc...|grid-rows-none] -->
+      <!-- Cela donne : grid-template-rows: repeat(1, minmax(0, 1fr)); -->
+
+      <!-- Grid Column Start / End : col-span-4 / col-span-full / col-start-6 / col-end-6 -->
+
+      <!-- Grid Row Start / End : row-span-4 / row-span-full / row-start-6 / row-end-6 -->
+
+      <!-- Gap : 
+        [gap-(0|0.5|1|2|4|etc...)] 
+        [gap-(x|y)-(0|0.5|1|2|4|etc...)] 
+      -->
+
+      <div class="bg-gray-200 h-96 p-1">
+        <div class="w-full bg-red-400 "></div>
+        <div class="w-full bg-green-400 "></div>
+        <div class="w-full bg-green-400 "></div>
+        <div class="w-full bg-green-400 "></div>
+        <div class="w-full bg-green-400 "></div>
+        <div class="w-full bg-green-400 "></div>
+        <div class="w-full bg-green-400 "></div>
+        <div class="w-full bg-green-400 "></div>
+        <div class="w-full bg-green-400 "></div>
+      </div>
+
+
+    </div>
+</body>
+</html>

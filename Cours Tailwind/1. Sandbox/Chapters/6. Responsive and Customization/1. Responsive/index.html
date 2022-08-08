@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Responsive</title>
+  <!-- Mettre en commentaire après installation -->
+  <!-- <script src="https://cdn.tailwindcss.com"></script>  -->
+  <link rel="stylesheet" href="dist/main.css">
+
+</head>
+<body class="bg-gray-800 text-white">
+
+
+  <h1 class="font-medium text-6xl text-center pt-20 pb-10">Responsive</h1>
+
+  <nav class="flex flex-wrap justify-center w-100 ">
+    <a class="flex-shrink-0  rounded-lg py-2 w-60 bg-gradient-to-r from-rose-600 to-red-600 m-6 text-lg flex justify-center items-center cursor-pointer" href="./index.html">Responsive</a>
+    <a class="flex-shrink-0  rounded-lg py-2 w-60 bg-gradient-to-r from-rose-600 to-red-600 m-6 text-lg flex justify-center items-center cursor-pointer"  href="../2. Personnalisation/index.html">Personnalisation</a>
+  </nav>
+
+    <hr>
+     <!-- Contenu de la leçon -->
+
+     <div class="container mx-auto pb-60 px-4">
+
+      <h2 class="text-4xl text-gray-50 pt-10 pb-5">Les "breakpoints"</h2>
+      <!-- sm : 640px -->
+      <!-- md : 768px -->
+      <!-- lg : 1024px -->
+      <!-- xl : 1280px -->
+      <!-- 2xl : 1536px -->
+
+      <!-- On rajoute le mot clé (tailwind appelle ça "modifier") devant la propriété sm:text-4xl va ajouter la classe "text-4xl" lorsque l'écran est supérieur à 640px. -->
+
+      <!-- C'est du mobile-first, on va de bas en haut, de 0 px à l'infini -->
+      <!-- sm: veut dire supérieur à sm(640px) -->
+
+
+      <p class="">Je change de taille en fonction de l'écran.</p>
+
+      <h2 class="text-4xl text-gray-50 pt-10 pb-5">Faire disparaître un élément</h2>
+
+      <div class="hidden bg-red-600 w-40 h-40"></div>
+
+      <h2 class="text-4xl text-gray-50 pt-10 pb-5">Flexbox rangée / colonne</h2>
+      <div class="flex">
+        <div class="w-16 h-16 bg-green-400 m-2"></div>
+        <div class="w-16 h-16 bg-green-400 m-2"></div>
+        <div class="w-16 h-16 bg-green-400 m-2"></div>
+      </div>
+
+      
+      <h2 class="text-4xl text-gray-50 pt-10 pb-5">Padding / Margin</h2>
+
+      <h1 class="p-6 bg-blue-200 text-gray-800 text-xl  md:p-12 md:text-4xl">Comment prendre soin de votre appareil photo ?</h1>
+
+    </div>
+</body>
+</html>

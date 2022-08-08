@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bordures&Séparations</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-800 text-white">
+    
+  <a class="absolute left-4 top-3	 flex items-center  px-4 py-2 font-semibold  bg-gradient-to-r from-slate-300 to-zinc-300 text-gray-800  rounded-sm shadow-sm " href="../../menu.html">
+    <span class="text-md">&#8678;</span>
+  </a>
+
+  <h1 class="font-medium text-6xl text-center pt-20 pb-10">Bordures&Séparations</h1>
+
+
+  <nav class="flex flex-wrap justify-center w-100 ">
+    <a class="flex-shrink-0  rounded-lg py-2 w-60 bg-gradient-to-r from-amber-600 to-orange-600 m-6 text-lg flex justify-center items-center cursor-pointer" href="./1. Couleurs et Effets.html">Couleurs et Effets</a>
+    <a class="flex-shrink-0  rounded-lg py-2 w-60 bg-gradient-to-r from-amber-600 to-orange-600 m-6 text-lg flex justify-center items-center cursor-pointer"  href="./2. Bordures et séparations.html">Bordures/Séparations</a>
+  </nav>
+
+
+
+  <hr>
+      <!-- Contenu de la leçon -->
+
+      <div class="container mx-auto pb-60 px-4">
+        <h2 class="text-4xl text-gray-50 pt-10 pb-5">Border Radius</h2>
+        <!-- [rounded-(none|rounded|sm|md|lg|xl|2xl|3xl|full)] -->
+
+        <div class="rounded-full p-5 mt-5 bg-green-100"></div>
+  
+        <h2 class="text-4xl text-gray-50 pt-10 pb-5">Borders</h2>
+        <!-- Border Width -->
+        <!-- [border-(0|8|border)] -->
+        <!-- [border-(t,r,b,l)-(0-8)]-->
+        
+        <!-- Border color -->
+        <!-- [border-(black|red|-50...900] -->
+
+        <!-- Border opacity -->
+        <!-- [border-opacity-(0|100)] -->
+
+        <!-- Border style -->
+        <!-- [border-(solid|dashed|dotted|double|none)] -->
+
+        <div class="border-8 border-red-400 p-5 mt-5 bg-green-200"></div>
+  
+  
+        <!-- ------- Divide ------- -->
+        <h2 class="text-4xl text-gray-50 pt-10 pb-5">
+          Séparer des éléments avec des bordures
+        </h2>
+        <!-- [divide-(x|y)-(0|2|4|8)] -->
+        <div class="divide-x-2 flex">
+          <div class="inline-block p-5 bg-red-500">1</div>
+          <div class="inline-block p-5 bg-red-500">2</div>
+          <div class="inline-block p-5 bg-red-500">3</div>
+        </div>
+  
+        <!-- ------- Ring ------- -->
+        <h2 class="text-4xl text-gray-50 pt-10 pb-5">
+          Ring Width/Color/Opacity/Style
+        </h2>
+        <!-- Width : [ring-[0|1|2|(mot clé 'ring' seul)|4|8] -->
+        <!-- Color : ring-yellow-500 -->
+        <!-- Opacity : ring-opacity-50 -->
+        <!-- Décalage width/height : [ring-offset-(0|1|2|4|8)] -->
+        <!-- Décalage couleur : ring-offset-red-700 -->
+        <button class="ring-2 p-5 bg-green-500 ring ring-yellow-500 ring-offset-8" >
+          Button
+        </button>
+      </div>
+</body>
+</html>

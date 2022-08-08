@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dark mode</title>
+  <link rel="stylesheet" href="../dist/output.css">
+</head>
+<body class="bg-gray-800 text-white">
+    
+
+
+  <h1 class="font-medium text-6xl text-center pt-20 pb-10">Modifiers</h1>
+
+  <nav class="flex flex-wrap justify-center w-100 mb-5">
+    <a class="flex-shrink-0  rounded-lg py-2 w-60 bg-gradient-to-r from-amber-600 to-orange-600 m-2 text-lg flex justify-center items-center cursor-pointer" href="./1.Animations Transitions.html">Animations / Transitions</a>
+    <a class="flex-shrink-0  rounded-lg py-2 w-60 bg-gradient-to-r from-amber-600 to-orange-600 m-2 text-lg flex justify-center items-center cursor-pointer"  href="./2.DarkMode.html">Dark Mode</a>
+    <a class="flex-shrink-0  rounded-lg py-2 w-60 bg-gradient-to-r from-amber-600 to-orange-600 m-2 text-lg flex justify-center items-center cursor-pointer"  href="./3.Modifiers.html">Modifiers</a>
+  </nav>
+
+    <hr>
+     <!-- Contenu de la leçon -->
+
+     <div class="container mx-auto pb-60 px-4">
+
+      <h2 class="bg-bleu-nuit-800 text-4xl text-gray-50 pt-10 pb-5">Les pseudos-classes</h2>
+
+      <!-- 
+        [hover + : + xxx] Survol 
+        [active + : + xxx] Active 
+        [focus + : + xxx] Focus 
+        etc ...
+       -->
+    
+      <div class="active:bg-yellow-300 w-20 h-20 bg-blue-400"></div>
+
+      <h2 class="bg-bleu-nuit-800 text-4xl text-gray-50 pt-10 pb-5">Styliser en fonction du parent</h2>
+
+       <!-- [group] sur le parent -->
+       <!-- [group-hover + : + bg-red-400] sur l'enfant -->
+      <div class="group flex w-50 h-50 bg-amber-400 p-16">
+        <div class="group-hover:bg-lime-700 w-20 h-20 bg-blue-400"></div>
+      </div>
+       
+      <h2 class="bg-bleu-nuit-800 text-4xl text-gray-50 pt-10 pb-5">Highlight de texte</h2>
+
+      <!-- [selection + : + couleur] -->
+
+      <div class="selection:bg-orange-600">
+        <p>
+          So I started to walk into the water. I won't lie to you boys, I was
+          terrified. But I pressed on, and as I made my way past the breakers
+          a strange calm came over me. I don't know if it was divine intervention
+          or the kinship of all living things but I tell you Jerry at that moment,
+          I <em>was</em> a marine biologist.
+        </p>
+      </div>
+
+      <h2 class="bg-bleu-nuit-800 text-4xl text-gray-50 pt-10 pb-5">Les pseudos-élements</h2>
+
+      <!-- On utilise le modifier [after:] ou [before:], puis on rajoute toutes les classes qu'on veut. -->
+
+      <h1 class="after:content-[''] after:w-40 after:h-40 after:bg-red-400 after:block ">Lorem ipsum dolor sit amet.</h1>
+
+
+
+      <h2 class="bg-bleu-nuit-800 text-4xl text-gray-50 pt-10 pb-5">On peut même utiliser les filters</h2>
+
+      <!-- [sepia|contrast-(0/200)|drop-shadow-(sm/2xl)|invert|hue-rotate(0/180)] -->
+
+      <img src="../ressources/cat.jpg" alt="cat" class="sepia">
+
+
+      <h2 class="bg-bleu-nuit-800 text-4xl text-gray-50 pt-10 pb-5">Styliser avec nth-child</h2>
+
+      <!-- [(odd|even):] -->
+      <!-- [(first|last):] -->
+      <!-- [only:] -->
+
+      <ul>
+        <li class="only:bg-gray-100">Orange</li>
+      </ul>
+
+
+    </div>
+</body>
+</html>

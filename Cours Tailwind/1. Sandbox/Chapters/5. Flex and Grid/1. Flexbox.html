@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Flexbox</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-800 text-white">
+    
+  <a class="absolute left-4 top-3	 flex items-center  px-4 py-2 font-semibold  bg-gradient-to-r from-slate-300 to-zinc-300 text-gray-800  rounded-sm shadow-sm " href="../../menu.html">
+    <span class="text-md">&#8678;</span>
+  </a>
+
+  <h1 class="font-medium text-6xl text-center pt-20 pb-10">Flexbox</h1>
+
+  <nav class="flex flex-wrap justify-center w-100 ">
+    <a class="flex-shrink-0  rounded-lg py-2 w-60 bg-gradient-to-r from-sky-200 to-blue-300 m-6 text-lg flex justify-center items-center cursor-pointer text-gray-800 font-bold" href="./1. Flexbox.html">Flexbox</a>
+    <a class="flex-shrink-0  rounded-lg py-2 w-60 bg-gradient-to-r from-sky-200 to-blue-300 m-6 text-lg flex justify-center items-center cursor-pointer text-gray-800 font-bold"  href="./2. Grid.html">Grid</a>
+  </nav>
+
+    <hr>
+     <!-- Contenu de la leçon -->
+
+     <div class="container mx-auto pb-60 px-4">
+      <h2 class="text-4xl text-gray-50 pt-10 pb-5">Flexbox</h2>
+
+      <h2 class="text-4xl text-gray-50 pt-10 pb-5">Propriétés Container</h2>
+      <!-- Initialisation : [flex|inline-flex] -->
+      <!-- Justify Content : [justify-(start|end|center|between|around|evenly)] -->
+      <!-- Align Items : [items-(start|end|center|baseline|stretch)] -->
+      <!-- Flex Direction : [flex-(row|row-reverse|col|col-reverse)] -->
+      <!-- Flex Wrap : [flex-(wrap|wrap-reverse|nowrap)] -->
+      <!-- Align Content : [content-(start|end|center|between|around|evenly)] -->
+
+      <div class=" bg-gray-200 h-[350px]">
+        <div class="w-20 h-20 bg-green-400 m-4"></div>
+        <div class="w-20 h-20 bg-green-400 m-4"></div>
+        <div class="w-20 h-20 bg-green-400 m-4"></div>
+      </div>
+
+
+        <h2 class="text-4xl text-gray-50 pt-10 pb-5">Propriétés pour les enfants</h2>
+        <!-- Flex Grow : [flex-grow-0|flex-grow], vous pouvez utiliser des classes arbitraires au cas où -->
+        <!-- Flex Shrink : [flex-shrink-0|flex-shrink]	 -->
+        <!-- Flex : [flex-(1|auto|initial|none)] -->
+        <!-- Order : [order-(1|2|3||4|5|etc ... )-(order-first|last|none)] -->
+        <!-- Align-self : [self-(start|end|center|stretch)] -->
+  
+        <div class="flex h-32 bg-gray-200">
+          <div class=" w-20 h-20 bg-green-400 m-4"></div>
+          <div class=" w-20 h-20 bg-black m-4"></div>
+          <div class=" w-20 h-20 bg-blue-900 m-4"></div>
+        </div>
+
+    </div>
+</body>
+</html>

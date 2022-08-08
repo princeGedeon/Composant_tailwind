@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dark mode</title>
+  <link rel="stylesheet" href="../dist/output.css">
+</head>
+<body class="bg-gray-100 dark:bg-gray-900  text-white">
+    
+
+  <h1 class="font-medium text-6xl text-center pt-20 pb-10 text-gray-800 dark:text-gray-50">Dark mode</h1>
+
+  <nav class="flex flex-wrap justify-center w-100 mb-5">
+    <a class="flex-shrink-0  rounded-lg py-2 w-60 bg-gradient-to-r from-amber-600 to-orange-600 m-2 text-lg flex justify-center items-center cursor-pointer" href="./1.Animations Transitions.html">Animations / Transitions</a>
+    <a class="flex-shrink-0  rounded-lg py-2 w-60 bg-gradient-to-r from-amber-600 to-orange-600 m-2 text-lg flex justify-center items-center cursor-pointer"  href="./2.DarkMode.html">Dark Mode</a>
+    <a class="flex-shrink-0  rounded-lg py-2 w-60 bg-gradient-to-r from-amber-600 to-orange-600 m-2 text-lg flex justify-center items-center cursor-pointer"  href="./3.Modifiers.html">Modifiers</a>
+  </nav>
+
+    <hr class="border border-t-gray-800">
+     <!-- Contenu de la leçon -->
+
+     <div class="container mx-auto pb-60 px-4">
+
+      <h2 class="bg-bleu-nuit-800 text-4xl text-gray-900  pt-10 pb-5">Dark mode</h2>
+      <button class="dark-mode-btn bg-slate-800  text-gray-50 p-2">Toggle Dark Mode</button>
+    
+
+    </div>
+
+    <script>
+
+      document.querySelector(".dark-mode-btn").addEventListener("click", () => {
+        document.querySelector("html").classList.toggle("dark");
+      })
+
+    </script>
+</body>
+</html>

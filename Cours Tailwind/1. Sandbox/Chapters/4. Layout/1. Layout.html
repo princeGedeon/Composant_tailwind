@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Layout</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-800 text-white">
+    
+  <a class="absolute left-4 top-3	 flex items-center  px-4 py-2 font-semibold  bg-gradient-to-r from-slate-300 to-zinc-300 text-gray-800  rounded-sm shadow-sm " href="../../menu.html">
+    <span class="text-md">&#8678;</span>
+  </a>
+
+  <h1 class="font-medium text-6xl text-center pt-20 pb-10">Disposition 🧱</h1>
+
+    <hr>
+     <!-- Contenu de la leçon -->
+
+     <div class="container mx-auto pb-60 px-4">
+
+      <h2 class="text-4xl text-gray-50 pt-10 pb-5">Le Container</h2>
+      <!-- Breakpoints
+        sm (640px)	max-width: 640px;
+        md (768px)	max-width: 768px;
+        lg (1024px)	max-width: 1024px;
+        xl (1280px)	max-width: 1280px;
+        2xl (1536px)	max-width: 1536px;
+      -->
+
+      <h2 class="text-4xl text-gray-50 pt-10 pb-5">Display</h2>
+      <!-- [block|inline-block|inline] -->
+      <!-- [flex|inline-flex] -->
+      <!-- [grid|inline-grid] -->
+      <!-- [invisible pour visibility|hidden pour display] -->
+
+      <p class="">Lorem ipsum dolor sit amet.</p>
+      <div class=" w-10 h-10 bg-blue-400"></div>
+
+      <h2 class="text-4xl text-gray-50 pt-10 pb-5">Box Sizing/Floats/Clear</h2>
+      <!-- [box-border|content] -->
+      <!-- [float-(right-left-none)] -->
+
+      <div class="m-8 p-8 scale-x-45 bg-red-400">Test</div>
+
+
+      <h2 class="text-4xl text-gray-50 pt-10 pb-5">Object-fit / position</h2>
+      <!-- [object-(cover|contain|fill|none)] -->
+      <!-- [object-(bottom|center|left|right|left|bottom|right|top)]  -->
+      <img src="./img-bg.jpg" class="block w-96 h-96 ">
+
+
+
+      <h2 class="text-4xl text-gray-50 pt-10 pb-5">Position</h2>
+      
+      <!-- Les différentes positions -->
+      <!-- [static|fixed|absolute|relative|sticky] -->
+
+      <!-- Pour déplacer un élément positionné -->
+      <!-- [(top|left|rigth|bottom)-96] -->
+      
+      <!-- Si on veut du négatif, on met un "-" devant la classe -->
+      <!-- -top-96 -->
+      <!-- inset-0	 -->
+
+      <!-- Classes arbitraires [top-[157px]] -->
+      <div class=" w-32 h-32  bg-green-400 "></div>
+
+
+      <h2 class="text-4xl text-gray-50 pt-10 pb-5">Z-Index / visibilité</h2>
+      <!-- [z-(0|10|20|30|auto)] -->
+
+      <div class="w-32 h-32 relative bg-blue-400 ">
+          <div class="w-20 h-20 bg-red-400 absolute "></div>
+          <div class="w-20 h-20 bg-white absolute "></div>
+      </div>
+      
+
+      
+      <h2 class="text-4xl text-gray-50 pt-10 pb-5">Transform</h2>
+      
+      <!-- Translate -->
+      <!-- [translate-(x|y)-(0|px|0.5|1|2|4|10|96] Il y a beaucoup de pas -->
+
+      <!-- On peut aussi utiliser les unités relatives -->
+      <!-- [translate-(x|y)-(1/2)(2/3)(2/4)(full)etc...] -->
+
+      <!-- On translate en négatif en mettant un "-" devant une classe [-translate-x-60] -->
+
+      <!-- On peut également scale, rotate, skew, etc ... -->
+      <!-- [scale-x-50], [rotate-45] etc ... -->
+
+      <div class="w-32 h-32  bg-green-400 "></div>
+
+      
+    </div>
+</body>
+</html>

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Concepts Tailwind</title>
+  <link rel="stylesheet" href="../dist/output.css">
+</head>
+<body class="bg-gray-800 text-white">
+    
+
+  <h1 class="font-medium text-6xl text-center pt-20 pb-10">Animations / Transitions</h1>
+
+  <nav class="flex flex-wrap justify-center w-100 mb-5">
+    <a class="flex-shrink-0  rounded-lg py-2 w-60 bg-gradient-to-r from-amber-600 to-orange-600 m-2 text-lg flex justify-center items-center cursor-pointer" href="./1.Animations Transitions.html">Animations / Transitions</a>
+    <a class="flex-shrink-0  rounded-lg py-2 w-60 bg-gradient-to-r from-amber-600 to-orange-600 m-2 text-lg flex justify-center items-center cursor-pointer"  href="./2.DarkMode.html">Dark Mode</a>
+    <a class="flex-shrink-0  rounded-lg py-2 w-60 bg-gradient-to-r from-amber-600 to-orange-600 m-2 text-lg flex justify-center items-center cursor-pointer"  href="./3.Modifiers.html">Modifiers</a>
+  </nav>
+
+    <hr>
+     <!-- Contenu de la leçon -->
+
+     <div class="container mx-auto pb-60 px-4 wiggle">
+
+      <h2 class="bg-bleu-nuit-800 text-4xl text-gray-50 pt-10 pb-5 animate-fade">Les animations </h2>
+    
+      <!-- Spin : animate-spin -->
+      <div class="w-10 h-10 border-[5px] rounded-full	border-slate-200 border-r-indigo-900	 mt-10"></div>
+      
+      <!-- Ping : animate-ping -->
+      <div class="w-10 h-10 bg-slate-300 rounded-full	bg-blue-200 mt-10"></div>
+
+      <!-- Pulse : animate-pulse -->
+      <div class="w-10 h-10 bg-slate-300 rounded-full	bg-blue-200 mt-10"></div>
+
+      <!-- Bounce : animate-bounce -->
+      <div class="w-10 h-10 bg-slate-300 rounded-full	bg-blue-200 mt-10"></div>
+
+
+      <h2 class="bg-bleu-nuit-800 text-4xl text-gray-50 pt-10 pb-5">Le Survol</h2>
+      <!-- On utilise le "modifier" hover: pour animer ou changer de propriété au survol -->
+
+      <div class=" w-10 h-10 border-[5px] rounded-full	border-slate-200 border-r-indigo-900	 mt-10"></div>
+
+      
+      <h2 class="bg-bleu-nuit-800 text-4xl text-gray-50 pt-10 pb-5">Les transitions</h2> 
+      <!-- On peut les transitions -->
+      <!-- [transition] -->
+      <!-- [duration-150|300|700] durée -->
+      <!-- [ease-in-out] easing -->
+      <!-- Il existe des transitions toutes prêtes :
+          [transitions-colors]
+          [transitions-opacity]
+          [transitions-shadow]
+          [transitions-transform]
+      -->
+      
+      <div class="bg-blue-500 w-10 h-10 border-[5px] rounded-full	border-slate-200 border-r-indigo-900	 mt-10"></div>
+
+    </div>
+</body>
+</html>

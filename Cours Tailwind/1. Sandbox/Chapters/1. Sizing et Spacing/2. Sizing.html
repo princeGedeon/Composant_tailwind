@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sizing</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-800 text-white">
+    
+  <a class="absolute left-4 top-3	 flex items-center  px-4 py-2 font-semibold  bg-gradient-to-r from-slate-300 to-zinc-300 text-gray-800  rounded-sm shadow-sm " href="../../menu.html">
+    <span class="text-md">&#8678;</span>
+  </a>
+
+  <h1 class="font-medium text-6xl text-center pt-20 pb-10">La Taille</h1>
+
+  <nav class="flex flex-wrap justify-center w-100 ">
+      <a class="flex-shrink-0  rounded-lg py-2 w-60 bg-red-500 m-6 text-lg flex justify-center items-center cursor-pointer" href="./1. Spacing.html">Margin / Padding </a>
+      <a class="flex-shrink-0  rounded-lg py-2 w-60 bg-red-500 m-6 text-lg flex justify-center items-center cursor-pointer"  href="./2. Sizing.html">Width / Height</a>
+  </nav>
+
+
+  <hr>
+  <!-- Contenu de la leçon -->
+
+  <div class="container mx-auto pb-60 px-4">
+
+      <h2 class="text-4xl text-gray-50  mt-10 mb-5">Width</h2>
+      <!-- Valeur absolue -->
+      <!-- [w-0|96] par pas de 0.5 puis 1, 2, 4 etc ... -->
+
+      <!-- Classe arbitraire -->
+      <!-- w-[10px] si vous voulez créer une classe spéciale à la volée -->
+      
+      <!-- Unités relatives -->
+      <!-- [w-1/2] width: 50%, il existe également les quarts(1/4), tiers(1/3), cinquieme(1/5) -->
+
+      <!-- Full/auto -->
+      <!-- [w-screen] 100vw -->
+      <!-- [w-full] 100% -->
+
+
+
+      <p class="w-96 bg-blue-600">Lorem ipsum dolor sit amet.</p>
+      <p class="w-1/2 bg-blue-600">Lorem ipsum dolor sit amet.</p>
+      <p class="w-3/4 bg-blue-600">Lorem ipsum dolor sit amet.</p>
+      <p class="max-w-xs bg-blue-600">Lorem ipsum dolor sit amet.</p>
+      <p class="hbg-blue-600">Lorem ipsum dolor sit amet.</p>
+
+      
+      <h2 class="text-4xl text-gray-50  mt-10 mb-5">Min/Max Width</h2>
+      
+      <!-- Min -->
+      <!-- [min-w-full] -->
+      <!-- [min-w-(min|max|fit)] min-width: min-content|max-content|fit-content -->
+
+      <!-- Max -->
+      <!-- [max-w-(xs|sm|md|lg|xl-7xl)] permet de créer des containers -->
+      <!-- [max-w-full] max-width: 100% -->
+      <!-- [max-w-(min|max|fit)] max-width: min-content|max-content|fit-content -->
+
+
+      <p class="bg-blue-600">Lorem ipsum dolor sit amet.</p>
+      <p class="bg-blue-600">Lorem ipsum dolor sit amet.</p>
+      <p class="h-fit bg-blue-600">Lorem ipsum dolor sit amet.</p>
+      
+      <h2 class="text-4xl text-gray-50  mt-10 mb-5">Height</h2>
+
+      <!-- Exactement les mêmes classes qu'au-dessus en remplaçant le "w" par un "h" -->
+
+      <p class="bg-blue-600">Lorem ipsum dolor sit amet.</p>
+      <p class="bg-blue-600">Lorem ipsum dolor sit amet.</p>
+      <p class="bg-blue-600">Lorem ipsum dolor sit amet.</p>
+      <p class="bg-blue-600">Lorem ipsum dolor sit amet.</p>
+      <p class="bg-blue-600">Lorem ipsum dolor sit amet.</p>
+
+
+
+  </div>
+  
+</body>
+</html>

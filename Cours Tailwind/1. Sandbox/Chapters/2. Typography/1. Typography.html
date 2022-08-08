@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Typographie</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="bg-gray-800 text-white">
+    <a
+      class="absolute left-4 top-3 flex items-center px-4 py-2 font-semibold bg-gradient-to-r from-slate-300 to-zinc-300 text-gray-800 rounded-sm shadow-sm"
+      href="../../menu.html"
+    >
+      <span class="text-md">&#8678;</span>
+    </a>
+
+    <h1 class="font-medium text-6xl text-center pt-20 pb-10">La Typographie</h1>
+
+    <hr />
+    <!-- Contenu de la leçon -->
+
+    <div class="container mx-auto pb-60 px-4">
+      <h2 class="text-4xl text-gray-50 pt-10 pb-5">Font-Size</h2>
+      <!-- [text-(xs|sm|base|lg|xl|2xl-9xl)]-->
+
+      <p class="text-base">Lorem ipsum dolor sit amet.</p>
+      <p class="text-lg font-extrabold">Lorem ipsum dolor sit amet.</p>
+      <p class="text-sm font-black">Lorem ipsum dolor sit amet.</p>
+      <p class="text-xs">Lorem ipsum dolor sit amet.</p>
+
+      <h2 class="text-4xl text-gray-50 pt-10 pb-5">poids de la police</h2>
+      <!-- [font-(thin|extralight|light|normal|medieum|semibold|bold|extrabold|black)] -->
+      <p class="">Lorem ipsum dolor sit amet.</p>
+
+      <h2 class="text-4xl text-gray-50 pt-10 pb-5">Font Family</h2>
+      <!-- [font-(sans|serif|mono) -->
+      <!-- Intégrer sa propre font puis utiliser une classe arbitraire [font-customFont] -->
+
+      <p class="text-4xl">Lorem ipsum dolor sit amet.</p>
+
+      <h2 class="text-4xl text-gray-50 pt-10 pb-5">
+        Text Overflow / Break Words
+      </h2>
+      <!-- [truncate] -->
+      <!-- [break-words] -->
+      <p class="w-40 h-40 bg-red-600">
+        Lorem ipsum dolor sit amet. loremloremloremloremloremlorem
+      </p>
+    </div>
+  </body>
+</html>

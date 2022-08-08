@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Couleurs&Effets</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-800 text-white">
+    
+  <a class="absolute left-4 top-3	 flex items-center  px-4 py-2 font-semibold  bg-gradient-to-r from-slate-300 to-zinc-300 text-gray-800  rounded-sm shadow-sm " href="../../menu.html">
+    <span class="text-md">&#8678;</span>
+  </a>
+
+  <h1 class="font-medium text-6xl text-center pt-20 pb-10">Couleurs&Effets</h1>
+
+  <nav class="flex flex-wrap justify-center w-100 ">
+    <a class="flex-shrink-0  rounded-lg py-2 w-60 bg-gradient-to-r from-amber-600 to-orange-600 m-6 text-lg flex justify-center items-center cursor-pointer" href="./1. Couleurs et Effets.html">Couleurs et Effets</a>
+    <a class="flex-shrink-0  rounded-lg py-2 w-60 bg-gradient-to-r from-amber-600 to-orange-600 m-6 text-lg flex justify-center items-center cursor-pointer"  href="./2. Bordures et séparations.html">Bordures/Séparations</a>
+  </nav>
+
+
+  <hr>
+   <!-- Contenu de la leçon -->
+
+   <div class="container mx-auto pb-60 px-4">
+
+    <h2 class="text-4xl text-gray-800  pt-10 pb-5">Les backgrounds</h2>
+    <!-- Vous avez accès à une jolie palette de couleurs bien fournie avec Tailwind -->
+    <!-- https://tailwindcss.com/docs/customizing-colors -->
+    <!-- Les classes des couleurs suivent cet ordre
+         [bg-color-50|(100-900)] 
+    -->
+    <!-- Opacity de la couleur avec le /x (rgba) -->
+    <!-- ring-slate-900/5 -->
+    
+    <div class="bg-lime-100/5 p-10 mt-5 "></div>
+    <div class="p-10 mt-5 "></div>
+    <div class="p-10 mt-5 "></div>
+
+
+    <h2 class="text-4xl text-green-50  pt-10 pb-5">Idem pour les textes</h2>
+
+    <!-- [text-color-50|(100-900)] -->
+
+    <p class=" text-3xl text-green-400">Lorem ipsum dolor sit amet.</p>
+    <p class=" text-2xl text-sky-300 ">Lorem ipsum dolor sit amet.</p>
+    <p class=" text-3xl">Lorem ipsum dolor sit amet.</p>
+
+    <h2 class="text-4xl text-gray-50  pt-10 pb-5">Dégradés</h2>
+
+    <!-- [bg-gradient-to-(r|tr|tl|b|br|bl)] -->
+    <!-- par exemple : [from-sky-500] [to-indigo-500] -->
+
+    <div class=" shadow-3xl bg-gradient-to-b from-sky-400 to-indigo-800 p-10 mt-5 "></div>
+    <div class="shadow-2xl shadow-red-200 p-10 mt-5 h-[500px] bg-[url('./img-bg.jpg')] bg-cover"></div>
+    <div class="p-10 mt-5 "></div>
+    <div class="p-10 mt-5 "></div>
+
+
+    <h2 class="text-4xl text-gray-50  pt-10 pb-5">Background image</h2>
+    <!-- SIZE : bg-auto / cover / contain -->
+    <!-- REPEAT : bg-repeat / no-repeat  -->
+    <!-- ATTACHMENT : bg-fixed -->
+    <!-- POSITION : bg-bottom / center / left / right / top / right-bottom / left-top -->
+    <!-- Bg-image arbitraire très pratique bg-[url('./img-bg.jpg')] -->
+    <div class="w-80 h-80"></div>
+
+
+    <h2 class="text-4xl text-black-50 pt-10 pb-5">Box Shadow</h2>
+    <!-- [shadow-(sm|shadow|md|lg|xl|2xl|inner|none)]  -->
+    <!-- [shadow-red-400] par exemple si vous voulez changer les couleurs. -->
+
+    <div class="p-10 mt-5 bg-green-100 "></div>
+
+    <h2 class="text-4xl text-black-50 pt-10 pb-5">Opacity</h2>
+    <!-- [opacity-(0|5|10|15|20|100)]-->
+    <div class="p-10 mt-5 bg-green-200"></div>
+
+</div>
+</body>
+</html>
